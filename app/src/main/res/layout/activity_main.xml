@@ -18,7 +18,7 @@
         app:layout_constraintVertical_bias="0.112" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnMapa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mapa das unidades"
@@ -29,7 +29,7 @@
         app:layout_constraintVertical_bias="0.316" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnInform"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Informaçoes das unidades"
@@ -40,7 +40,7 @@
         app:layout_constraintVertical_bias="0.478" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnContribuir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Como contribuir"
