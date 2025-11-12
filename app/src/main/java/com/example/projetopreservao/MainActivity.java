@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         btnContribuir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent contribuir = new Intent(getApplicationContext(), contribuir.class);                                          
+                Intent contribuir = new Intent(getApplicationContext(), contribuir.class);
             }
         });
     }
