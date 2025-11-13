@@ -1,0 +1,128 @@
+/* RESET E CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #050509, #0c0c14, #10101a);
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CABEÇALHO */
+header {
+    text-align: center;
+    padding: 40px 20px 30px;
+    background: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+header h1 {
+    font-size: 2.6rem;
+    color: #aaa;
+    text-shadow: 0 0 8px #0ff2ff3b;
+    animation: subtleGlow 2s ease-in-out infinite alternate;
+}
+
+header p {
+    color: #8fd2de;
+    margin-top: 10px;
+    font-size: 1.05rem;
+}
+
+@keyframes subtleGlow {
+    from { text-shadow: 0 0 4px #00eaff; }
+    to { text-shadow: 0 0 15px #00eaff66; }
+}
+
+
+/* MENU - BOTÕES EM COLUNA */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    padding: 50px;
+}
+
+/* ESTILO DOS BOTÕES */
+.neon-btn {
+    width: 250px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid #00e6b8;
+    color: #00e6b8;
+    padding: 14px 0;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px transparent;
+}
+
+.neon-btn:hover {
+    background: #00e6b8;
+    color: #0b0b11;
+    box-shadow: 0 0 18px #00e6b8;
+    transform: scale(1.03);
+}
+
+/* RODAPÉ */
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 25px 10px;
+    background: rgba(255, 255, 255, 0.03);
+    border-top: 1px solid rgba(255,255, 255, 0.08);
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.github-links {
+    margin-top: 15px;
+}
+
+.github-links p {
+    margin-bottom: 5px;
+    color: #ccc;
+    font-weight: 500;
+}
+
+.github-links ul {
+    list-style: none;
+}
+
+.github-links li {
+    margin: 10px 0;
+}
+
+.github-links a {
+    color: #00e6b8;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.github-links a:hover {
+    text-decoration: underline;
+    color: #00ffe5;
+}
+footer p{
+    margin-top: 10px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    .neon-btn {
+        width: 80%;
+        font-size: 1rem;
+    }
+}
