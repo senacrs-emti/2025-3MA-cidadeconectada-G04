@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent mapa = new Intent(getApplicationContext(), mapa.class);
+                startActivity(mapa);
             }
         });
 
@@ -27,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
         btnInform.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent Informacoes = new Intent(getApplicationContext(), Informacoes.class); 
+                Intent Informacoes = new Intent(getApplicationContext(), Informacoes.class);
+                startActivity(Informacoes);
             }
         });
 
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent contribuir = new Intent(getApplicationContext(), contribuir.class);
+                startActivity(contribuir);
             }
         });
     }
