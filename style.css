@@ -1,4 +1,4 @@
-/* RESET E CONFIGURAÇÕES GERAIS */
+/* ========== RESET GLOBAL ========== */
 * {
     margin: 0;
     padding: 0;
@@ -7,122 +7,175 @@
 }
 
 body {
-    background: linear-gradient(135deg, #050509, #0c0c14, #10101a);
-    color: #e0e0e0;
+    background: radial-gradient(circle at top, #111219, #050509 80%);
+    color: #e6e6e6;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-/* CABEÇALHO */
+/* ========== HEADER ========== */
 header {
     text-align: center;
-    padding: 40px 20px 30px;
-    background: rgba(255, 255, 255, 0.03);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 45px 20px;
+    background: rgba(255, 255, 255, 0.04);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(6px);
 }
 
 header h1 {
-    font-size: 2.6rem;
-    color: #aaa;
-    text-shadow: 0 0 8px #0ff2ff3b;
-    animation: subtleGlow 2s ease-in-out infinite alternate;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #aeeaff;
+    text-shadow: 0 0 12px #0099cc55;
+    animation: glow 2.5s ease-in-out infinite alternate;
 }
 
 header p {
-    color: #8fd2de;
-    margin-top: 10px;
-    font-size: 1.05rem;
+    margin-top: 12px;
+    color: #7fd5e2;
+    font-size: 1.15rem;
 }
 
-@keyframes subtleGlow {
-    from { text-shadow: 0 0 4px #00eaff; }
-    to { text-shadow: 0 0 15px #00eaff66; }
+@keyframes glow {
+    from {
+        text-shadow: 0 0 8px #00eaff;
+    }
+    to {
+        text-shadow: 0 0 18px #00eaff80;
+    }
 }
 
-
-/* MENU - BOTÕES EM COLUNA */
+/* ========== MENU (COLUNA) ========== */
 .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
-
-    padding: 50px;
+    gap: 28px;
+    padding: 60px 20px;
 }
 
-/* ESTILO DOS BOTÕES */
+/* ========== BOTÕES NEON ========== */
 .neon-btn {
-    width: 250px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1.5px solid #00e6b8;
-    color: #00e6b8;
-    padding: 14px 0;
+    width: 260px;
+    padding: 15px 0;
     font-size: 1.1rem;
-    border-radius: 10px;
-    letter-spacing: 0.5px;
+    color: #00e6c7;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1.7px solid #00e6c7;
+    border-radius: 12px;
+    letter-spacing: 0.6px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 10px transparent;
+    transition: 0.28s ease;
+    box-shadow: 0 0 12px #00e6c744 inset;
 }
 
 .neon-btn:hover {
-    background: #00e6b8;
-    color: #0b0b11;
-    box-shadow: 0 0 18px #00e6b8;
-    transform: scale(1.03);
+    background: #2f4f4b;
+    color: #0a0f11;
+    box-shadow: 0 0 20px #00ffe5, 0 0 40px #00e6c7 inset;
+    transform: scale(1.05);
 }
 
-/* RODAPÉ */
+/* ========== FOOTER ========== */
 footer {
     margin-top: auto;
     text-align: center;
-    padding: 25px 10px;
-    background: rgba(255, 255, 255, 0.03);
-    border-top: 1px solid rgba(255,255, 255, 0.08);
-    font-size: 0.9rem;
-    color: #aaa;
+    padding: 30px 10px;
+    background: rgba(255, 255, 255, 0.04);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(5px);
 }
 
-.github-links {
-    margin-top: 15px;
+.ft-title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #aeeaff;
+    letter-spacing: 0.5px;
 }
 
-.github-links p {
-    margin-bottom: 5px;
-    color: #ccc;
-    font-weight: 500;
-}
-
-.github-links ul {
+.ft-list {
     list-style: none;
 }
 
-.github-links li {
-    margin: 10px 0;
+.ft-list li {
+    margin: 6px 0;
 }
 
-.github-links a {
-    color: #00e6b8;
+.ft-list a {
+    color: #00e6c7;
     text-decoration: none;
-    transition: 0.2s;
+    font-weight: 500;
+    transition: 0.25s ease;
 }
 
-.github-links a:hover {
-    text-decoration: underline;
-    color: #00ffe5;
-}
-footer p{
-    margin-top: 10px;
+.ft-list a:hover {
+    color: #00ffee;
+    text-shadow: 0 0 8px #00ffeeaa;
 }
 
-/* RESPONSIVIDADE */
+.copy {
+    margin-top: 18px;
+    font-size: 0.85rem;
+    color: #cccccc;
+}
+
+/* ========== RESPONSIVIDADE ========== */
 @media (max-width: 600px) {
     header h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     .neon-btn {
-        width: 80%;
+        width: 85%;
         font-size: 1rem;
     }
+}
+/* ===== PÁGINAS INTERNAS ===== */
+
+.page-container {
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* ===== CARDS ===== */
+.card {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 255, 220, 0.4);
+    box-shadow: 0 0 14px #00e6c722 inset;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px #00ffe5aa;
+}
+
+.card h2 {
+    color: #9ff6ff;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+/* ===== MAPA BOX ===== */
+
+.map-box {
+    margin-top: 20px;
+    height: 300px;
+    border-radius: 12px;
+    border: 1px dashed #00e6c7aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.03);
+    color: #8ee5f5;
+}
+
+.placeholder {
+    opacity: 0.8;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
 }
