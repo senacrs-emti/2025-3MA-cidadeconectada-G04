@@ -60,9 +60,9 @@ header p {
     width: 260px;
     padding: 15px 0;
     font-size: 1.1rem;
-    color: #00e6c7;
+    color: #303a39;
     background: rgba(255, 255, 255, 0.04);
-    border: 1.7px solid #00e6c7;
+    border: 1.7px solid #2e3e3c;
     border-radius: 12px;
     letter-spacing: 0.6px;
     cursor: pointer;
@@ -139,37 +139,48 @@ footer {
     gap: 30px;
 }
 
-/* ===== CARDS ===== */
+/* ====== CARDS (Reduzidos e Centralizados) ====== */
+
 .card {
-    background: rgba(255, 255, 255, 0.04);
-    padding: 25px;
-    border-radius: 14px;
-    border: 1px solid rgba(0, 255, 220, 0.4);
-    box-shadow: 0 0 14px #00e6c722 inset;
-    transition: 0.3s ease;
+    background: #16191d;            /* bloco escuro uniforme */
+    width: 70%;                     /* reduzido */
+    max-width: 750px;               /* limite para não ficar grande */
+    margin: 20px auto;              /* centraliza */
+    padding: 20px 25px;
+    border-radius: 10px;
+    border: 1px solid #22262b;      /* borda leve */
+    box-shadow: 0 0 0 transparent;  /* garante ausência total de neon */
+    color: #d4d7dc;
 }
-.card li{
-    margin-left: 40px;
+
+.card h2 {
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+    color: #e6e6e6;
+}
+
+.card p,
+.card ul,
+.card li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #c5c7cb;
     margin-top: 7px;
 }
-.card p{
-    margin-top: 10px;
-}
-
-.card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 20px #00ffe5aa;
-}
-
 .card a{
     color: #00e6c7;
 }
 
-.card h2 {
-    color: #9ff6ff;
-    margin-bottom: 10px;
-    font-size: 1.4rem;
+.card{
+    margin-top: 7px;
 }
+
+/* Ajuste opcional para listas */
+.card ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
 
 /* ===== MAPA BOX ===== */
 
