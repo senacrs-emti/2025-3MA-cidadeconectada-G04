@@ -1,4 +1,4 @@
-/* ========== RESET GLOBAL ========== */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     flex-direction: column;
 }
 
-/* ========== HEADER ========== */
+
 header {
     text-align: center;
     padding: 45px 20px;
@@ -46,7 +46,7 @@ header p {
     }
 }
 
-/* ========== MENU (COLUNA) ========== */
+
 .menu {
     display: flex;
     flex-direction: column;
@@ -55,7 +55,7 @@ header p {
     padding: 60px 20px;
 }
 
-/* ========== BOTÕES NEON ========== */
+
 .neon-btn {
     width: 260px;
     padding: 15px 0;
@@ -77,7 +77,7 @@ header p {
     transform: scale(1.05);
 }
 
-/* ========== FOOTER ========== */
+
 footer {
     margin-top: auto;
     text-align: center;
@@ -120,7 +120,7 @@ footer {
     color: #cccccc;
 }
 
-/* ========== RESPONSIVIDADE ========== */
+
 @media (max-width: 600px) {
     header h1 {
         font-size: 2.2rem;
@@ -130,7 +130,7 @@ footer {
         font-size: 1rem;
     }
 }
-/* ===== PÁGINAS INTERNAS ===== */
+
 
 .page-container {
     padding: 40px 25px;
@@ -139,17 +139,17 @@ footer {
     gap: 30px;
 }
 
-/* ====== CARDS (Reduzidos e Centralizados) ====== */
+
 
 .card {
-    background: #16191d;            /* bloco escuro uniforme */
-    width: 70%;                     /* reduzido */
-    max-width: 750px;               /* limite para não ficar grande */
-    margin: 20px auto;              /* centraliza */
+    background: #16191d;            
+    width: 70%;                     
+    max-width: 750px;               
+    margin: 20px auto;              
     padding: 20px 25px;
     border-radius: 10px;
-    border: 1px solid #22262b;      /* borda leve */
-    box-shadow: 0 0 0 transparent;  /* garante ausência total de neon */
+    border: 1px solid #22262b;     
+    box-shadow: 0 0 0 transparent;  
     color: #d4d7dc;
 }
 
@@ -175,14 +175,14 @@ footer {
     margin-top: 7px;
 }
 
-/* Ajuste opcional para listas */
+
 .card ul {
     margin-top: 10px;
     padding-left: 20px;
 }
 
 
-/* ===== MAPA BOX ===== */
+
 
 .map-box {
     margin-top: 20px;
@@ -201,7 +201,7 @@ footer {
     font-size: 1rem;
     letter-spacing: 0.5px;
 }
-/* BOTÕES DE NAVEGAÇÃO */
+
 .nav-buttons {
     display: flex;
     justify-content: center;
@@ -210,7 +210,7 @@ footer {
 }
 
 .nav-btn {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(67, 42, 42, 0.057);
     border: 1.5px solid #00e6c7;
     color: #00e6c7;
     padding: 12px 22px;
@@ -218,7 +218,7 @@ footer {
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s ease;
-    box-shadow: 0 0 10px #00e6c722 inset;
+    box-shadow: 0 0 10px #6ec0b522 inset;
     letter-spacing: 0.5px;
 }
 
@@ -228,3 +228,60 @@ footer {
     box-shadow: 0 0 20px #00ffe5cc, 0 0 30px #00e6c7 inset;
     transform: scale(1.05);
 }
+
+
+.main-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+
+
+.card-main {
+    background: #1b1e23;            
+    padding: 28px 22px;
+    text-align: center;
+    text-decoration: none;
+    color: #e4e6eb;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    border: 1px solid #2d3239;      
+    border-radius: 14px;
+
+    transition: 0.25s ease;
+}
+
+
+.card-main:hover {
+    background: #24282f;
+    border-color: #393f48;
+    transform: translateY(-4px);
+    cursor: pointer;
+}
+
+
+.card-main:active {
+    transform: translateY(0);
+    background: #20242a;
+}
+main h5{
+    font-size: 15px;
+    margin-top: 0px;
+}
+.card-main h3{
+    color: #3cb2a2;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+.card-main .emoji {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
