@@ -56,6 +56,8 @@ header p {
 }
 
 
+
+
 .neon-btn {
     width: 260px;
     padding: 15px 0;
@@ -172,7 +174,7 @@ footer {
 }
 
 .card{
-    margin-top: 7px;
+    margin-top: 5px;
 }
 
 
@@ -181,7 +183,75 @@ footer {
     padding-left: 20px;
 }
 
+.card1 {
+    background: #16191d;            
+    width: 70%; 
+    margin-top: 20px;                    
+    max-width: 750px;               
+    margin: 20px auto;              
+    padding: 25px 25px;
+    border-radius: 10px;
+    border: 1px solid #22262b;     
+    box-shadow: 0 0 0 transparent;  
+    color: #d4d7dc;
+}
 
+.card1 h2 {
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+    color: #5dc3ca;
+}
+
+.card1 p,
+.card1 ul,
+.card1 li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #c5c7cb;
+    margin-top: 7px;
+}
+.card1 a{
+    color: #00e6c7;
+}
+
+.card1{
+    margin-top: 15px;
+}
+
+
+.card1 ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+.card1 p,
+.card1 ul,
+.card1 li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #c5c7cb;
+    margin-top: 7px;
+}
+.card1 a{
+    color: #00e6c7;
+}
+
+.card1{
+    margin-top: 20px;
+}
+
+
+.card1 ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.page-container strong{
+    font-size: 17px;
+}
+
+.page-container{
+    margin-top: 5px;
+}
 
 
 .map-box {
@@ -233,7 +303,7 @@ footer {
 .main-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 22px;
+    gap: 15px;
     width: 90%;
     max-width: 900px;
     margin: 50px auto;
@@ -249,10 +319,8 @@ footer {
     color: #e4e6eb;
     font-size: 1.2rem;
     font-weight: 600;
-
     border: 1px solid #2d3239;      
     border-radius: 14px;
-
     transition: 0.25s ease;
 }
 
@@ -283,5 +351,10 @@ main h5{
     font-size: 2.4rem;
     margin-bottom: 10px;
     opacity: 0.9;
+}
+
+img {
+    width: 1000px;
+    height: 300px;
 }
 
