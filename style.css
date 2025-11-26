@@ -56,6 +56,8 @@ header p {
 }
 
 
+
+
 .neon-btn {
     width: 260px;
     padding: 15px 0;
@@ -172,7 +174,7 @@ footer {
 }
 
 .card{
-    margin-top: 7px;
+    margin-top: 5px;
 }
 
 
@@ -181,7 +183,9 @@ footer {
     padding-left: 20px;
 }
 
-
+.page-container{
+    margin-top: 10px;
+}
 
 
 .map-box {
@@ -233,7 +237,7 @@ footer {
 .main-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 22px;
+    gap: 15px;
     width: 90%;
     max-width: 900px;
     margin: 50px auto;
@@ -249,10 +253,8 @@ footer {
     color: #e4e6eb;
     font-size: 1.2rem;
     font-weight: 600;
-
     border: 1px solid #2d3239;      
     border-radius: 14px;
-
     transition: 0.25s ease;
 }
 
