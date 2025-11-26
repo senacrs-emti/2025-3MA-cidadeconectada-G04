@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
@@ -11,6 +10,7 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 
+        <!-- Botão Voltar -->
         <Button
             android:id="@+id/btnVoltar"
             android:layout_width="wrap_content"
@@ -19,141 +19,225 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- 1 -->
+        <!-- TÍTULO GERAL -->
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tituloGeral"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="1. Participação em Projetos"
-            android:textSize="20sp"
+            android:text="Unidades de Conservação"
+            android:textSize="22sp"
+            android:textStyle="bold"
             android:layout_marginTop="24dp"
             app:layout_constraintTop_toBottomOf="@id/btnVoltar"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
+        <!-- =============================================================== -->
+        <!-- 1 — Reserva Biológica do Lami -->
+        <!-- =============================================================== -->
+
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tituloLami"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Participe de ações práticas realizadas nas unidades de conservação, auxiliando em atividades de campo, monitoramento ambiental e apoio técnico. Sua presença fortalece o trabalho de preservação."
+            android:text="Reserva Biológica do Lami José Lutzenberger"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/tituloGeral"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/descLami"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Criada para proteger o ecossistema de restinga, a reserva abriga espécies raras e ameaçadas, como Ephedra tweediana."
             android:textSize="14sp"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/textView2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <!-- 2 -->
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="2. Produção de Conhecimento"
-            android:textSize="20sp"
-            android:layout_marginTop="24dp"
-            app:layout_constraintTop_toBottomOf="@id/textView4"
+            app:layout_constraintTop_toBottomOf="@id/tituloLami"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/localLami"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Contribua com pesquisas, análises de dados e criação de materiais educativos. A educação ambiental é essencial para ampliar a conscientização e envolver mais pessoas na proteção da natureza."
+            android:text="Localização: Avenida Otaviano José Pinto, s/nº, bairro Lami."
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/textView5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <!-- 3 -->
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="3. Mutirões e Voluntariado"
-            android:textSize="20sp"
-            android:layout_marginTop="24dp"
-            app:layout_constraintTop_toBottomOf="@id/textView6"
+            app:layout_constraintTop_toBottomOf="@id/descLami"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/especiesLami"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Ajude em campanhas de limpeza, restauração de áreas degradadas e ações comunitárias. Cada pequena iniciativa ajuda a proteger habitats e espécies locais."
+            android:text="Principais espécies:\n• Gato-do-mato-pequeno\n• Lontra-neotropical\n• Capivara\n• Jacaré-de-papo-amarelo\n• Bugio-ruivo"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/textView8"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <!-- 4 -->
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="4. Apoio a Projetos Locais"
-            android:textSize="20sp"
-            android:layout_marginTop="24dp"
-            app:layout_constraintTop_toBottomOf="@id/textView9"
+            app:layout_constraintTop_toBottomOf="@id/localLami"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/orgaoLami"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Incentive iniciativas de preservação e projetos sustentáveis na sua comunidade. A colaboração entre moradores fortalece a gestão ambiental e o cuidado com as áreas naturais."
+            android:text="Órgão responsável: SMAMUS"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/textView10"
+            app:layout_constraintTop_toBottomOf="@id/especiesLami"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- 5 -->
+        <!-- =============================================================== -->
+        <!-- 2 — Parque Saint Hilaire -->
+        <!-- =============================================================== -->
+
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/tituloSaint"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="5. Divulgação e Conscientização"
+            android:text="Parque Natural Municipal Saint'Hilaire"
             android:textSize="20sp"
-            android:layout_marginTop="24dp"
-            app:layout_constraintTop_toBottomOf="@id/textView11"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@id/orgaoLami"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/descSaint"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Use suas redes sociais ou conversas do dia a dia para compartilhar informações sobre as unidades de conservação. Quanto mais pessoas informadas, maior a proteção das áreas naturais."
+            android:text="Parque destinado à proteção de áreas remanescentes de Mata Atlântica."
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/textView13"
+            app:layout_constraintTop_toBottomOf="@id/tituloSaint"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- 6 -->
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/localSaint"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="6. Ações no Cotidiano"
+            android:text="Localização: Rua Senador Salgado Filho, Viamão – RS."
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/descSaint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/especiesSaint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Principais espécies:\n• Bugio-ruivo\n• Gavião-pombo-pequeno\n• Cabritinha-de-couro\n• Corticeira-do-banhado\n• Graxaim-do-mato"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/localSaint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/orgaoSaint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Órgão responsável: Secretaria Municipal do Meio Ambiente de Viamão"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/especiesSaint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- =============================================================== -->
+        <!-- 3 — Refúgio São Pedro -->
+        <!-- =============================================================== -->
+
+        <TextView
+            android:id="@+id/tituloSaoPedro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Refúgio de Vida Silvestre São Pedro"
             android:textSize="20sp"
-            android:layout_marginTop="24dp"
-            app:layout_constraintTop_toBottomOf="@id/textView14"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@id/orgaoSaint"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/localSaoPedro"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Reduzir resíduos, reciclar, economizar água e optar por transportes sustentáveis são atitudes simples que ajudam a preservar o meio ambiente e reduzem impactos urbanos."
+            android:text="Localização: Estrada das Quirinas – Porto Alegre – RS."
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tituloSaoPedro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/especiesSaoPedro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=" Principais espécies:\n• Tamanduá-mirim\n• Sabiá-laranjeira\n• Lagarto-teiú\n• Grapia\n• Gavião-carijó"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/localSaoPedro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/orgaoSaoPedro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Órgão responsável: Projeto Luz Azul – SNUC"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/especiesSaoPedro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- =============================================================== -->
+        <!-- 4 — Parque Morro do Osso -->
+        <!-- =============================================================== -->
+
+        <TextView
+            android:id="@+id/tituloOsso"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Parque Natural Morro do Osso"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@id/orgaoSaoPedro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/descOsso"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Unidade que protege áreas de mata nativa com grande diversidade de fauna, incluindo populações de bugio-ruivo."
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tituloOsso"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/especiesOsso"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Principais espécies:\n• Bugio-ruivo\n• Jararaca-pintada\n• Coral-verdadeira\n• Sabiá-ferreiro\n• Perereca-do-banhado"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/descOsso"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/orgaoOsso"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Órgão responsável: SMAMUS"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="32dp"
-            app:layout_constraintTop_toBottomOf="@id/textView15"
+            app:layout_constraintTop_toBottomOf="@id/especiesOsso"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </ScrollView>
