@@ -183,8 +183,74 @@ footer {
     padding-left: 20px;
 }
 
-.page-container{
+.card1 {
+    background: #16191d;            
+    width: 70%; 
+    margin-top: 20px;                    
+    max-width: 750px;               
+    margin: 20px auto;              
+    padding: 25px 25px;
+    border-radius: 10px;
+    border: 1px solid #22262b;     
+    box-shadow: 0 0 0 transparent;  
+    color: #d4d7dc;
+}
+
+.card1 h2 {
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+    color: #5dc3ca;
+}
+
+.card1 p,
+.card1 ul,
+.card1 li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #c5c7cb;
+    margin-top: 7px;
+}
+.card1 a{
+    color: #00e6c7;
+}
+
+.card1{
+    margin-top: 15px;
+}
+
+
+.card1 ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+.card1 p,
+.card1 ul,
+.card1 li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #c5c7cb;
+    margin-top: 7px;
+}
+.card1 a{
+    color: #00e6c7;
+}
+
+.card1{
+    margin-top: 20px;
+}
+
+
+.card1 ul {
     margin-top: 10px;
+    padding-left: 20px;
+}
+
+.page-container strong{
+    font-size: 17px;
+}
+
+.page-container{
+    margin-top: 5px;
 }
 
 
