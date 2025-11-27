@@ -292,6 +292,11 @@ footer {
     letter-spacing: 0.5px;
 }
 
+.card1 img{
+  height: 100%;
+  width: 100%;
+}
+
 .nav-btn:hover {
     background: #00e6c7;
     color: #0b0f12;
