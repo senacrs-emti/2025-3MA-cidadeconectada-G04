@@ -5,239 +5,239 @@
     android:layout_height="match_parent"
     android:fillViewport="true">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp">
-
-        <!-- Botão Voltar -->
-        <Button
-            android:id="@+id/btnVoltar"
-            android:layout_width="wrap_content"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Voltar"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            android:padding="16dp">
 
-        <!-- TÍTULO GERAL -->
-        <TextView
-            android:id="@+id/tituloGeral"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Unidades de Conservação"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:layout_marginTop="24dp"
-            app:layout_constraintTop_toBottomOf="@id/btnVoltar"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <!-- Botão Voltar -->
+                <Button
+                    android:id="@+id/btnVoltar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Voltar"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- =============================================================== -->
-        <!-- 1 — Reserva Biológica do Lami -->
-        <!-- =============================================================== -->
+                <!-- TÍTULO GERAL -->
+                <TextView
+                    android:id="@+id/tituloGeral"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Unidades de Conservação"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintTop_toBottomOf="@id/btnVoltar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/tituloLami"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Reserva Biológica do Lami José Lutzenberger"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginTop="24dp"
-            app:layout_constraintTop_toBottomOf="@id/tituloGeral"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <!-- =============================================================== -->
+                <!-- 1 — Reserva Biológica do Lami -->
+                <!-- =============================================================== -->
 
-        <TextView
-            android:id="@+id/descLami"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Criada para proteger o ecossistema de restinga, a reserva abriga espécies raras e ameaçadas, como Ephedra tweediana."
-            android:textSize="14sp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/tituloLami"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <TextView
+                    android:id="@+id/tituloLami"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Reserva Biológica do Lami José Lutzenberger"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintTop_toBottomOf="@id/tituloGeral"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/localLami"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Localização: Avenida Otaviano José Pinto, s/nº, bairro Lami."
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/descLami"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <TextView
+                    android:id="@+id/descLami"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Criada para proteger o ecossistema de restinga, a reserva abriga espécies raras e ameaçadas, como Ephedra tweediana."
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/tituloLami"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/especiesLami"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Principais espécies:\n• Gato-do-mato-pequeno\n• Lontra-neotropical\n• Capivara\n• Jacaré-de-papo-amarelo\n• Bugio-ruivo"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/localLami"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <TextView
+                    android:id="@+id/localLami"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Localização: Avenida Otaviano José Pinto, s/nº, bairro Lami."
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/descLami"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/orgaoLami"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Órgão responsável: SMAMUS"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/especiesLami"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <TextView
+                    android:id="@+id/especiesLami"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Principais espécies:\n• Gato-do-mato-pequeno\n• Lontra-neotropical\n• Capivara\n• Jacaré-de-papo-amarelo\n• Bugio-ruivo"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/localLami"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- =============================================================== -->
-        <!-- 2 — Parque Saint Hilaire -->
-        <!-- =============================================================== -->
+                <TextView
+                    android:id="@+id/orgaoLami"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Órgão responsável: SMAMUS"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/especiesLami"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/tituloSaint"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Parque Natural Municipal Saint'Hilaire"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginTop="32dp"
-            app:layout_constraintTop_toBottomOf="@id/orgaoLami"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <!-- =============================================================== -->
+                <!-- 2 — Parque Saint Hilaire -->
+                <!-- =============================================================== -->
 
-        <TextView
-            android:id="@+id/descSaint"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Parque destinado à proteção de áreas remanescentes de Mata Atlântica."
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/tituloSaint"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <TextView
+                    android:id="@+id/tituloSaint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Parque Natural Municipal Saint'Hilaire"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintTop_toBottomOf="@id/orgaoLami"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/localSaint"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Localização: Rua Senador Salgado Filho, Viamão – RS."
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/descSaint"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <TextView
+                    android:id="@+id/descSaint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Parque destinado à proteção de áreas remanescentes de Mata Atlântica."
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/tituloSaint"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/especiesSaint"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Principais espécies:\n• Bugio-ruivo\n• Gavião-pombo-pequeno\n• Cabritinha-de-couro\n• Corticeira-do-banhado\n• Graxaim-do-mato"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/localSaint"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <TextView
+                    android:id="@+id/localSaint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Localização: Rua Senador Salgado Filho, Viamão – RS."
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/descSaint"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/orgaoSaint"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Órgão responsável: Secretaria Municipal do Meio Ambiente de Viamão"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/especiesSaint"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <TextView
+                    android:id="@+id/especiesSaint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Principais espécies:\n• Bugio-ruivo\n• Gavião-pombo-pequeno\n• Cabritinha-de-couro\n• Corticeira-do-banhado\n• Graxaim-do-mato"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/localSaint"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- =============================================================== -->
-        <!-- 3 — Refúgio São Pedro -->
-        <!-- =============================================================== -->
+                <TextView
+                    android:id="@+id/orgaoSaint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Órgão responsável: Secretaria Municipal do Meio Ambiente de Viamão"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/especiesSaint"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/tituloSaoPedro"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Refúgio de Vida Silvestre São Pedro"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginTop="32dp"
-            app:layout_constraintTop_toBottomOf="@id/orgaoSaint"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <!-- =============================================================== -->
+                <!-- 3 — Refúgio São Pedro -->
+                <!-- =============================================================== -->
 
-        <TextView
-            android:id="@+id/localSaoPedro"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Localização: Estrada das Quirinas – Porto Alegre – RS."
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/tituloSaoPedro"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <TextView
+                    android:id="@+id/tituloSaoPedro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Refúgio de Vida Silvestre São Pedro"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintTop_toBottomOf="@id/orgaoSaint"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/especiesSaoPedro"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text=" Principais espécies:\n• Tamanduá-mirim\n• Sabiá-laranjeira\n• Lagarto-teiú\n• Grapia\n• Gavião-carijó"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/localSaoPedro"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <TextView
+                    android:id="@+id/localSaoPedro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Localização: Estrada das Quirinas – Porto Alegre – RS."
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/tituloSaoPedro"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/orgaoSaoPedro"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Órgão responsável: Projeto Luz Azul – SNUC"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/especiesSaoPedro"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <TextView
+                    android:id="@+id/especiesSaoPedro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=" Principais espécies:\n• Tamanduá-mirim\n• Sabiá-laranjeira\n• Lagarto-teiú\n• Grapia\n• Gavião-carijó"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/localSaoPedro"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- =============================================================== -->
-        <!-- 4 — Parque Morro do Osso -->
-        <!-- =============================================================== -->
+                <TextView
+                    android:id="@+id/orgaoSaoPedro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Órgão responsável: Projeto Luz Azul – SNUC"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/especiesSaoPedro"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/tituloOsso"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Parque Natural Morro do Osso"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginTop="32dp"
-            app:layout_constraintTop_toBottomOf="@id/orgaoSaoPedro"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <!-- =============================================================== -->
+                <!-- 4 — Parque Morro do Osso -->
+                <!-- =============================================================== -->
 
-        <TextView
-            android:id="@+id/descOsso"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Unidade que protege áreas de mata nativa com grande diversidade de fauna, incluindo populações de bugio-ruivo."
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/tituloOsso"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <TextView
+                    android:id="@+id/tituloOsso"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Parque Natural Morro do Osso"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintTop_toBottomOf="@id/orgaoSaoPedro"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/especiesOsso"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Principais espécies:\n• Bugio-ruivo\n• Jararaca-pintada\n• Coral-verdadeira\n• Sabiá-ferreiro\n• Perereca-do-banhado"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/descOsso"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+                <TextView
+                    android:id="@+id/descOsso"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Unidade que protege áreas de mata nativa com grande diversidade de fauna, incluindo populações de bugio-ruivo."
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/tituloOsso"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-        <TextView
-            android:id="@+id/orgaoOsso"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Órgão responsável: SMAMUS"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="32dp"
-            app:layout_constraintTop_toBottomOf="@id/especiesOsso"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
+                <TextView
+                    android:id="@+id/especiesOsso"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Principais espécies:\n• Bugio-ruivo\n• Jararaca-pintada\n• Coral-verdadeira\n• Sabiá-ferreiro\n• Perereca-do-banhado"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/descOsso"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/orgaoOsso"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Órgão responsável: SMAMUS"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="32dp"
+                    app:layout_constraintTop_toBottomOf="@id/especiesOsso"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

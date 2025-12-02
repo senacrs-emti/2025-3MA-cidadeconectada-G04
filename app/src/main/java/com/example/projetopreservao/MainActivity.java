@@ -19,10 +19,11 @@ public class MainActivity extends AppCompatActivity {
         btnMapa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent mapa = new Intent(getApplicationContext(), mapa.class);
-                startActivity(mapa);
+                Intent Mapa = new Intent(getApplicationContext(), Mapa.class);
+                startActivity(Mapa);
             }
         });
+
 
         btnInform = findViewById(R.id.btnInform);
         btnInform.setOnClickListener(new View.OnClickListener() {
