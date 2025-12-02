@@ -256,7 +256,7 @@ footer {
 
 .map-box {
     margin-top: 20px;
-    height: 300px;
+    height: 500px;
     border-radius: 12px;
     border: 1px dashed #00e6c7aa;
     display: flex;
@@ -290,6 +290,11 @@ footer {
     transition: 0.3s ease;
     box-shadow: 0 0 10px #6ec0b522 inset;
     letter-spacing: 0.5px;
+}
+
+.card1 img{
+  height: 100%;
+  width: 100%;
 }
 
 .nav-btn:hover {
